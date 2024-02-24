@@ -4,29 +4,27 @@ require_once 'inc/app.php';
 
 ?>
 <body>
-    
     <div class="container my-3 ">    
         <div class="row d-flex justify-content-center">
                <?php  $mes->printError();?>
                <?php $mes->printSuccess();?>
                <?php if($ses->get('error')){
-    $ses->unset('error');
-}
-if($ses->get('success')){
-    $ses->unset('success');
-} ?>
+                        $ses->unset('error');
+                    }
+                if($ses->get('success')){
+                    $ses->unset('success');
+                } ?>
                 <div class="container mb-5 d-flex justify-content-center">
                     <div class="col-md-4">
                         <form action="handle/addToDo.php" method="post">
-                        <textarea type="text" class="form-control" rows="3" name="title" id="" placeholder="enter your note here"></textarea>
-                        <div class="text-center">
+                         <textarea type="text" class="form-control" rows="3" name="title" id="" placeholder="enter your note here"></textarea>
+                         <input type="date" class="input input-bordered input-secondary w-full max-w-xs schedule-date" />
+                         <div class="text-center">
                             <button type="submit" name="add" class="form-control text-white bg-info mt-3 " >Add To Do</button>
                         </div>
                         </form>
                     </div>
                 </div>
-               
-
         </div>
         <div class="row d-flex justify-content-between">   
             <!-- all -->
