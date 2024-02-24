@@ -18,7 +18,7 @@ require_once 'inc/app.php';
                     <div class="col-md-4">
                         <form action="handle/addToDo.php" method="post">
                          <textarea type="text" class="form-control" rows="3" name="title" id="" placeholder="enter your note here"></textarea>
-                         <input type="date" class="input input-bordered input-secondary w-full max-w-xs schedule-date" />
+                         <input type="date" name="date" class="input input-bordered input-secondary w-full max-w-xs schedule-date" />
                          <div class="text-center">
                             <button type="submit" name="add" class="form-control text-white bg-info mt-3 " >Add To Do</button>
                         </div>

@@ -32,9 +32,9 @@ class DB{
         return $rows;
     }
     
-    public function update($columns,$columnsAndValues,$table,$cond){
+    public function update($columnsAndValues,$table,$cond,$columns="*"){
        //search on this row in the database
-        $foundRow=$this->SelectOne($columns,$table,$cond);
+        $foundRow=$this->SelectOne($table,$cond,$columns);
         if(count($foundRow)>0){
             $query="update $table set $columnsAndValues where $cond ";
             $runQuery=mysqli_query($this->conn,$query);

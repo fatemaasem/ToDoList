@@ -14,6 +14,7 @@ else{
 <?php $mes->printError();?>
     <form action="handle/edit.php?id=<?=$id?>" method="post">
             <textarea type="text" class="form-control"  name="title" id="" placeholder="enter your note here"></textarea>
+            <input type="date" name="date"class="input input-bordered input-secondary w-full max-w-xs schedule-date" />
             <div class="text-center">
                 <button type="submit" name="edit" class="form-control text-white bg-info mt-3 " >Update</button>
             </div>  
