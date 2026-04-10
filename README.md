@@ -25,8 +25,8 @@ It is designed to help users manage their daily tasks efficiently with basic CRU
 - **PHP Native (Core PHP)**
 - **HTML**
 - **CSS**
-- **MySQL** (if you used database — قوليلي لو استخدمتيها أو لا)
-- **Bootstrap** (لو مستخدماه)
+- **MySQL**
+
 
 ### 🎯 Purpose of the Project
 
